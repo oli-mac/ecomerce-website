@@ -2,6 +2,7 @@ import { Box, AppBar, Container, CssBaseline, Link, ThemeProvider, Toolbar, Typo
 import { createTheme } from "@mui/material/styles";
 import Head from "next/head";
 import NextLink from 'next/link';
+import classes from "../utils/classes";
 
 export default function Layout(title, description, Children ){
 
@@ -21,7 +22,7 @@ export default function Layout(title, description, Children ){
         palette: {
             mode: 'light',
             primary: {
-                main: '#0EC540',
+                main: '#0EF24C',
             },
             secondary: {
                 main: '#208080',
@@ -36,19 +37,19 @@ export default function Layout(title, description, Children ){
             </Head>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
-                <AppBar position="static">
-                    <Toolbar>
+                <AppBar position="static" sx={classes.appbar}>
+                    <Toolbar sx={classes.toolbar}>
                         <NextLink href="/" passHref>
                             <Link>
-                                <Typography>Teacup</Typography>
+                                <Typography sx={classes.brand}>Teacup</Typography>
                             </Link>
                         </NextLink>
                     </Toolbar>
                 </AppBar>
-                <Container component="main">
+                <Container component="main" sx={classes.main}>
                     {Children}
                 </Container>
-                <Box component="footer">
+                <Box component="footer" sx={classes.footer}>
                     <Typography>All rights reserved. olyad mulugeta</Typography>
                 </Box>
             </ThemeProvider>
