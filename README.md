@@ -4,7 +4,7 @@
 * [x] Configure VS Code
 * [x] Create Next App
 * [x] Publish On Github
-* [] Create Website Layout
+* [x] Create Website Layout
 * [] Connect To Sanity
 * [] Products List
 * [] Product Details
