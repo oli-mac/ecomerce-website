@@ -7,6 +7,13 @@ import classes from "../utils/classes";
 export default function Layout(title, description, Children ){
 
     const theme = createTheme({
+        components: {
+            MuiLink: {
+                defaultProps: {
+                    underline: 'none',
+                }
+            }
+        },
         typography: {
             h1: {
                 fontSize: '1.6rem',
