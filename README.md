@@ -1,9 +1,9 @@
 # ecomerce-webs
 
-* [*] Install Tools On Windows
-* [*] Configure VS Code
-* [*] Create Next App
-* [*] Publish On Github
+* [x] Install Tools On Windows
+* [x] Configure VS Code
+* [x] Create Next App
+* [x] Publish On Github
 * [] Create Website Layout
 * [] Connect To Sanity
 * [] Products List
